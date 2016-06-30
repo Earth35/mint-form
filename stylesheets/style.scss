@@ -13,7 +13,6 @@ $font-basic-color: #333;
   margin: auto;
   /* temp */
   height: 100vh;
-  background-color: blue;
   header {
     position: relative;
     padding: 50px 0 10px 0;
@@ -28,16 +27,68 @@ $font-basic-color: #333;
       top: 25px;
       display: inline-block;
       list-style: none outside;
-      li {
-        display: inline-block;
-        font-family: Helvetica;
-        font-size: 1.0em;
-        color: $font-basic-color;
+      a {
         box-sizing: border-box;
         padding: 0 10px 0 5px;
         &:first-child {
           font-weight: bold;
           border-right: 1px solid $vertical-divider-color;
+        }
+        li {
+          display: inline-block;
+          font-family: Helvetica;
+          font-size: 1.0em;
+          color: $font-basic-color;
+        }
+      }
+    }
+  }
+  section {
+    width: 66%;
+    position: relative;
+    display: inline-block;
+    float: left;
+    box-sizing: border-box;
+    padding: 50px;
+    /* temp */
+    background-color: yellow;
+    height: 1000px;
+  }
+  #vertical-divider {
+    height: 1000px; /* temp */
+    display: inline-block;
+    width: 34%;
+    margin-top: 25px;
+    border-left: 1px solid $vertical-divider-color;
+    box-sizing: border-box;
+    aside {
+      position: relative;
+      display: inline-block;
+      float: right;
+      box-sizing: border-box;
+      margin: 0 25px;
+      padding: 25px 10px 10px 25px;
+      /* temp */
+      background-color: $sidebar-color;
+      height: 1000px;
+      span {
+        font-family: Helvetica;
+        font-size: 1.1em;
+        color: $font-basic-color;
+      }
+      ul {
+        padding-left: 15px;
+        padding-top: 15px;
+        list-style: disc outside;
+        font-family: Helvetica;
+        font-size: 0.75em;
+        color: $font-basic-color;
+        li {
+          margin: 5px 0 10px 0;
+          a {
+            text-decoration: underline;
+            color: $font-basic-color;
+          }
         }
       }
     }
