@@ -2,14 +2,36 @@
 /* general */
 #main-content {
   box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.3);
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  height: 600px; }
 
+button[type="submit"] {
+  display: block;
+  height: 40px;
+  width: 90px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #45cae6;
+  color: #fff; }
+
+#consent {
+  font-family: Helvetica;
+  font-size: 0.7em;
+  color: #333; }
+  #consent a {
+    text-decoration: none;
+    color: #45cae6; }
+
+/* content */
 #wrapper {
   position: relative;
-  width: 50%;
+  width: 775px;
   margin: auto;
-  /* temp */
-  height: 100vh; }
+  /* header */
+  /* form */
+  /* sidebar */
+  /* footer */ }
   #wrapper header {
     position: relative;
     padding: 50px 0 10px 0;
@@ -40,28 +62,54 @@
     display: inline-block;
     float: left;
     box-sizing: border-box;
-    padding: 50px;
-    /* temp */
-    background-color: yellow;
-    height: 1000px; }
+    padding: 50px; }
+    #wrapper section h2 {
+      font-family: Helvetica;
+      font-size: 1.5em;
+      font-color: #333;
+      letter-spacing: 0.5px;
+      line-height: 1.6em;
+      vertical-align: middle;
+      margin-bottom: 50px; }
+    #wrapper section form {
+      width: 75%;
+      margin-bottom: 10px; }
+      #wrapper section form .generic-label {
+        font-family: Helvetica;
+        font-size: 0.9em; }
+      #wrapper section form input {
+        width: 100%;
+        height: 1.2em;
+        padding: 0.4em 0.4em;
+        border-radius: 2px;
+        border: 1px solid #d8d8d8;
+        margin: 20px 0;
+        font-family: Helvetica; }
+      #wrapper section form .cb-label {
+        width: 50%; }
+        #wrapper section form .cb-label #remember {
+          position: relative;
+          top: 0.2em;
+          width: 5%;
+          margin: 0 10px 0 0;
+          border: none; }
   #wrapper #vertical-divider {
-    height: 1000px;
-    /* temp */
     display: inline-block;
     width: 34%;
+    height: 550px;
     margin-top: 25px;
     border-left: 1px solid #d3d3d3;
     box-sizing: border-box; }
     #wrapper #vertical-divider aside {
+      height: 100%;
       position: relative;
       display: inline-block;
       float: right;
       box-sizing: border-box;
+      border-radius: 2px;
       margin: 0 25px;
       padding: 25px 10px 10px 25px;
-      /* temp */
-      background-color: #f5f5f5;
-      height: 1000px; }
+      background-color: #f5f5f5; }
       #wrapper #vertical-divider aside span {
         font-family: Helvetica;
         font-size: 1.1em;
